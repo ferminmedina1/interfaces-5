@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(0deg, rgba(175, 117, 17, 0.5), rgba(175, 117, 17, 0.5)), url("../images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contacts-section{
+    background-color: white;
+    border-radius: 12px;
+    height: 650px;
+    width: 20%;
+    margin-left: 20px;
+}
+
+.contacts-header{
+    margin-top: 60px;
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contacts-section h2{
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.addContact{
+    background: #AF7511;
+    border-radius: 12px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    transition: ease 200ms;
+}
+
+.addContact:hover{
+    background: #c48210;
+}
+
+ul{
+    padding: 0;
+    height: 550px;
+    border-radius: 12px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+li{
+    display: flex;
+    background: #E8E8E8;
+    border-radius: 10px;
+    height: auto;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+}
+
+.friend-image{
+    display: flex;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.friend-image img{
+    width: auto;
+    height: auto;
+    position: relative;
+    left: -20%;
+}
+
+
+#dot{
+    width: 10px;
+    height: 10px;
+}
+
+.contact-state{
+    display: flex;
+    align-items: center;
+}
+
+.contact-state p{
+    font-size: 14px;
+    margin: 0;
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.contact-name{
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
