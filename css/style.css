@@ -9,7 +9,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(0deg, rgba(175, 117, 17, 0.5), rgba(175, 117, 17, 0.5)), url("../images/background.jpg");
+    background-color: #E1E0DD;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -74,8 +74,8 @@ li{
 .friend-image{
     display: flex;
     position: relative;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     overflow: hidden;
     margin: 10px;
     border-radius: 100%;
@@ -109,6 +109,29 @@ li{
 
 .contact-name{
     margin: 0;
-    margin-bottom: 10px;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info{
+    display: flex;
+    align-items: center;
+    width: 75%;
+    justify-content: space-between;
+}
+
+.contact-info button{
+    background: inherit;
+    border: none;
+    padding: 0;
+}
+
+.contact-info button img{
+    width: 28px;
+    height: 28px;
+}
+
+#cam{
+    width: 35px;
+    height: 35px;
 }
