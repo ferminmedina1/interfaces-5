@@ -7,6 +7,7 @@
     <title>Trabajo Practico 5 - Documentación y Testing</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Atune%3A">
 </head>
 <body>
@@ -27,23 +28,25 @@
                 </div>
                 <h3>Hernan Medina</h3>
             </div>
-            <button class="search-filter"><img src="./images/home-icn.png" alt="home"></button>
+            <button class="search-filter" id="actualPage"><img src="./images/home-icn.png" alt="home"></button>
             <button class="search-filter"><img src="./images/message-icn.png" alt="message"></button>
-            <button class="search-filter"><img src="./images/logout-icn.png" alt="logout" id="logout"></button>
+            <button class="search-filter"><img src="./images/notifications.svg" alt="notifications"></button>
+            <button class="search-filter logout" ><img src="./images/logout-icn.png" alt="logout" id="logout"></button>
         </div>
     </nav>
-    <article>
-        <section>
+    <article class="index-container">
             <section class="contacts-section">
                 <div class="contacts-header">
                     <h2>Amigos en línea</h2>
                 </div>
                 <ul>
                     <li>
-                        <div class="friend-image">
-                            <img src="./images/profile.jpg" alt="profile">
+                        <div class="contact-state">
+                            <div class="friend-image">
+                                <img src="./images/profile.jpg" alt="profile">
+                            </div>
+                            <img src="./images/dot.png" alt="dot" id="dot">
                         </div>
-                        <!--<img src="./images/dot.png" alt="dot" id="dot">-->
                         <div class="contact-info">
                             <h4 class="contact-name">Maria Elena Medina</h4>
                             <div class="contact-btns">
@@ -52,14 +55,90 @@
                             </div>
                         </div>
                     </li>
-
                     <li>
-                        <div class="friend-image">
-                            <img src="./images/profile.jpg" alt="profile">
+                        <div class="contact-state">
+                            <div class="friend-image">
+                                <img src="./images/profile.jpg" alt="profile">
+                            </div>
+                            <img src="./images/dot.png" alt="dot" id="dot">
                         </div>
-                        <!--<img src="./images/dot.png" alt="dot" id="dot">-->
                         <div class="contact-info">
-                            <h4 class="contact-name">Maria</h4>
+                            <h4 class="contact-name">Sofia</h4>
+                            <div class="contact-btns">
+                            <button><img src="./images/message-icn.png" alt="message"></button>
+                            <button><img src="./images/videocam.svg" alt="message" id="cam"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact-state">
+                            <div class="friend-image">
+                                <img src="./images/profile.jpg" alt="profile">
+                            </div>
+                            <img src="./images/dot.png" alt="dot" id="dot">
+                        </div>
+                        <div class="contact-info">
+                            <h4 class="contact-name">Maria Elena Medina De la Animas</h4>
+                            <div class="contact-btns">
+                            <button><img src="./images/message-icn.png" alt="message"></button>
+                            <button><img src="./images/videocam.svg" alt="message" id="cam"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact-state">
+                            <div class="friend-image">
+                                <img src="./images/profile.jpg" alt="profile">
+                            </div>
+                            <img src="./images/dot.png" alt="dot" id="dot">
+                        </div>
+                        <div class="contact-info">
+                            <h4 class="contact-name">Maria Elena Medina</h4>
+                            <div class="contact-btns">
+                            <button><img src="./images/message-icn.png" alt="message"></button>
+                            <button><img src="./images/videocam.svg" alt="message" id="cam"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact-state">
+                            <div class="friend-image">
+                                <img src="./images/profile.jpg" alt="profile">
+                            </div>
+                            <img src="./images/dot.png" alt="dot" id="dot">
+                        </div>
+                        <div class="contact-info">
+                            <h4 class="contact-name">Maria Elena Medina</h4>
+                            <div class="contact-btns">
+                            <button><img src="./images/message-icn.png" alt="message"></button>
+                            <button><img src="./images/videocam.svg" alt="message" id="cam"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact-state">
+                            <div class="friend-image">
+                                <img src="./images/profile.jpg" alt="profile">
+                            </div>
+                            <img src="./images/dot.png" alt="dot" id="dot">
+                        </div>
+                        <div class="contact-info">
+                            <h4 class="contact-name">Maria Elena Medina</h4>
+                            <div class="contact-btns">
+                            <button><img src="./images/message-icn.png" alt="message"></button>
+                            <button><img src="./images/videocam.svg" alt="message" id="cam"></button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="contact-state">
+                            <div class="friend-image">
+                                <img src="./images/profile.jpg" alt="profile">
+                            </div>
+                            <img src="./images/dot.png" alt="dot" id="dot">
+                        </div>
+                        <div class="contact-info">
+                            <h4 class="contact-name">Maria Elena Medina</h4>
                             <div class="contact-btns">
                             <button><img src="./images/message-icn.png" alt="message"></button>
                             <button><img src="./images/videocam.svg" alt="message" id="cam"></button>
@@ -68,7 +147,53 @@
                     </li>
                 </ul>
             </section>
-        </section>
+            <section class="middle-container">
+                <section class="new-post">
+                    <div class="new-post-content">
+                        <div class="post-profile-img">
+                            <div class="profile-img-container">
+                                <img src="./images/perfil-ejemplo.jpg" alt="perfil" class="crop">
+                            </div>
+                            <h3>Hernan Medina</h3>
+                        </div>
+                        <textarea type="text" placeholder="Muestra que esta pasando a la comunidad..."></textarea>
+                        <div class="icons">
+                            <button><img src="./images/image.svg" alt="upload-image"></button>
+                            <button><img src="./images/movie.svg" alt="message"></button>
+                        </div>
+                        <button class="post-btn">Publicar</button>
+                    </div>
+                </section>
+                <section class="index-posts">
+                    <div class="new-post-content">
+                        <div class="header-post">
+                            <div class="post-profile-img">
+                                <div class="profile-img-container">
+                                    <img src="./images/profile.jpg" alt="perfil" class="crop">
+                                </div>
+                                <h3>Hernan Medina</h3>
+                            </div>
+                            <button><img src="./images/options.svg" alt="options-btn"></button>
+                        </div>
+                        <textarea type="text" placeholder="Muestra que esta pasando a la comunidad..."></textarea>
+                        <div class="icons">
+                            <button><img src="./images/image.svg" alt="upload-image"></button>
+                            <button><img src="./images/movie.svg" alt="message"></button>
+                        </div>
+                        <button class="post-btn">Publicar</button>
+                    </div>
+                </section>
+            </section>
+            <section >
+                <section >
+                    <div ">
+                        <div >
+                            <img src="./images/perfil-ejemplo.jpg" alt="perfil" class="crop">
+                        </div>
+                        <h3>Hernan Medina</h3>
+                    </div>
+                </section>
+            </section>
     </article>
 </body>
 </html>

@@ -51,7 +51,7 @@ nav{
 
 button img{
     width: 38px;
-    height: 38px;;
+    height: 38px;
 }
 
 .right-container{
@@ -69,7 +69,12 @@ button img{
     border-radius: 100%;
     cursor: pointer;
 }
-
+.crop{
+    width: auto;
+    height: auto;
+    position: relative;
+    left: -20%;
+}
 .right-container h3{
     cursor: pointer;
 }
@@ -103,4 +108,12 @@ button img{
 
 #logout:hover{
     filter: drop-shadow(0px 4px 4px #ff0000);
+}
+
+#actualPage{
+    border-bottom: 3px solid #FE9A35;
+}
+
+.logout{
+    margin-left: 40px;
 }
