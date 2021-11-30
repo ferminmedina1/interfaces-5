@@ -139,7 +139,7 @@ li{
     margin-top: 60px;
     display: flex;
     justify-content: center;
-    height: 220px;
+    height: auto;
 }
 
 .post-profile-img{
@@ -214,6 +214,11 @@ textarea{
     border: no;
 }
 
+.header-post{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
 
 .postFriend{
     background-color: var(--colorCards);
@@ -226,14 +231,20 @@ textarea{
 
 .containerPuntos{
     display: flex;
-    justify-content: end;
-    margin-top: 2%;
+    background: inherit;
+    border: none;
+    cursor: pointer;
+    justify-self: end;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: -10px;
 }
 
 
 #puntosHorizontalesCard{
-    width: 5%;
-    display: flex;
+    width: 40px;
+    height: 40px;
 }
 
 

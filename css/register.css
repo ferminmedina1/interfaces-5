@@ -1,0 +1,10 @@
+body{
+    animation: background 20s alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background {
+    0%{background-image: url("../images/Background.png");}
+    50%{background-image: url("../images/Background2.png");}
+    100%{background-image: url("../images/Background3.png");}
+}
