@@ -1,3 +1,18 @@
+:root{
+    --colorBotones: #E4982C;
+    --colorFondo: #E5E5E2;
+    --colorInputs: #E6E6E6;
+    --colorCards: #FFFFFF;
+    --colorNav: #FFFFFF;
+    --colorLinea: #A19595;
+}
+ 
+body{
+    background-color: var(--colorFondo);
+}
+
+
+
 .index-container{
     display: flex;
     justify-content: space-between;
@@ -6,7 +21,7 @@
 /* ///////////////////////////////////////////////// CONTACT-SECTION ///////////////////////////////////////////////// */
 
 .contacts-section{
-    background-color: white;
+    background-color: var(--colorCards);
     border-radius: 12px;
     height: 650px;
     width: 20%;
@@ -28,27 +43,10 @@
     font-weight: bold;
 }
 
-.addContact{
-    background: #AF7511;
-    border-radius: 12px;
-    border: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    margin-right: 15px;
-    transition: ease 200ms;
-}
-
-.addContact:hover{
-    background: #c48210;
-}
 
 ul{
     padding: 0;
     height: 550px;
-    border-radius: 12px;
     overflow: hidden;
     overflow-y: auto;
     width: 100%;
@@ -60,32 +58,20 @@ ul{
 li{
     display: flex;
     background: #E8E8E8;
-    border-radius: 10px;
     height: auto;
-    margin: 10px;
-    font-size: 18px;
-    font-weight: 400;
-    align-items: center;
-    width: 90%;
+    border-radius: 12px;
+    padding: 2% 0px;
+    margin: 0 0 10px 0px;
+    width: 95%;
 }
 
 .friend-image{
-    display: flex;
     position: relative;
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-    margin: 10px;
-    border-radius: 100%;
+    margin: 0px 0px 0px 8px;
     cursor: pointer;
 }
 
-.friend-image img{
-    width: auto;
-    height: auto;
-    position: relative;
-    left: -20%;
-}
+
 
 
 .contact-state{
@@ -106,6 +92,8 @@ li{
 .contact-name{
     margin: 0;
     display: flex;
+    font-size: 93%;
+    margin-left: -5%;
     align-items: center;
 }
 
@@ -113,7 +101,7 @@ li{
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
+    margin-left: 7%;
 }
 
 .contact-info button{
@@ -124,17 +112,14 @@ li{
 }
 
 .contact-info button img{
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
 }
 
-#cam{
-    width: 35px;
-    height: 35px;
-}
 
 .contact-btns{
     white-space: nowrap;
+    margin-left: 2%;
 }
 
 /* ///////////////////////////////////////////////// POST-SECTION ///////////////////////////////////////////////// */
@@ -148,32 +133,27 @@ li{
 }
 
 .new-post{
-    background-color: white;
+    background-color: var(--colorCards);
     border-radius: 12px;
     width: 100%;
     margin-top: 60px;
     display: flex;
     justify-content: center;
-    height: 250px;
+    height: 220px;
 }
 
 .post-profile-img{
     display: flex;
     align-items: center;
-    margin-top: 5px;
 }
 
 textarea{
-    background-color: #E6E6E6;
+    background-color: var(--colorInputs);
     border-radius: 12px;
     border: none;
-    padding-left: 15px;
     margin-left: 10px;
-    padding-right: -15px;
-    padding-top: 10px;
-    width: 96.5%;
+    padding: 13px 0px 0px 13px;
     font-size: 18px;
-    height: 46px;
     resize: vertical;
 }
 
@@ -186,7 +166,7 @@ textarea{
 .icons{
     display: flex;
     align-items: center;
-    margin-top: 5px;
+    margin: 11px 0px 0px 1px;
 }
 
 .icons button{
@@ -197,14 +177,14 @@ textarea{
 }
 
 .icons img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     padding: 0;
     margin: 0;
 }
 
 .post-btn{
-    background-color: #D89727;
+    background-color: var(--colorBotones);
     border: none;
     border-radius: 12px;
     transition: all ease 500ms;
@@ -216,23 +196,224 @@ textarea{
     cursor: pointer;
 }
 
-.post-btn:hover{
-    background-color: #50d827;
-}
 
 
 /* ///////////////////////////////////////////////// INDEX-POSTS-SECTION ///////////////////////////////////////////////// */
 
 .index-posts{
-    background-color: white;
+    background-color: var(--colorCards);
     border-radius: 12px;
     width: 100%;
+    height: 100%;
     margin-top: 60px;
     display: flex;
     justify-content: center;
-    height: 250px;
 }
 
 .header-post button{
     border: no;
+}
+
+
+.postFriend{
+    background-color: var(--colorCards);
+    border-radius: 12px;
+    width: 90%;
+    display: flex;
+    padding: 0px 5px;
+    flex-direction: column;
+}
+
+.containerPuntos{
+    display: flex;
+    justify-content: end;
+    margin-top: 2%;
+}
+
+
+#puntosHorizontalesCard{
+    width: 5%;
+    display: flex;
+}
+
+
+.nombreUserPublicacion{
+    margin: 0;
+}
+
+.tiempoPublicacion{
+    margin: 3px 0 0 0;
+}
+
+.likeShareComment{
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid var(--colorLinea);
+    padding: 8px 0px;
+    border-bottom: 2px solid var(--colorLinea);
+    justify-content: space-evenly;
+}
+
+#like, #comment, #share{
+    background: none;
+    width: 23%;
+    border: none;
+}
+
+
+.contenidoPost{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 0px 21px 21px 18px;
+    background-color: #E6E6E6;
+    margin: 0 0 20px 0;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgGaleria{
+    width: 40%;
+    margin: 3px;
+}
+
+.cantCommentarios{
+    justify-content: flex-end;
+    display: flex;
+}
+
+.comentario{
+    display: flex;
+    flex-direction: row;
+}
+
+.imgComentario{
+    display: flex;
+    position: relative;
+    width: 40px;
+    height: 37px;
+    overflow: hidden;
+    margin: 0px 4px 0 0;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.nombreYtextoComentario{
+
+    background-color: var(--colorInputs);
+    border-radius: 12px;
+    padding: 0 0px 4px 16px;
+    width: 31%;
+}
+
+.textoComentario{
+    margin: 4px 0 0px 7px;
+    font-size: 100%;
+}
+
+.nombreComentario{
+    margin: 7px 0 0 0;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.containerEscribirComentario{
+    display: flex;
+    flex-direction: row;
+    margin-top: 6%;
+    width: 100%;
+}
+
+#iconSendComentario{
+    width: 40px;
+    height: 40px;
+}
+
+#inputComentario{
+    background-color: var(--colorInputs);
+    border: none;
+    border-radius: 12px;
+    font-size: 90%;
+    padding: 2%;
+    width: 100%;
+}
+
+.imgInputSendComentario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.cardPersonasRecomendadas{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--colorCards);
+    border-radius: 12px;
+    padding: 2%;
+    width: 55%;
+}
+
+.imgYnombre{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 10px 15px 6px;
+    align-items: center;
+}
+
+.imgPersonaRecomendada{
+    width: 55px;
+}
+
+.nombrePersonaRecomendada{
+    font-size: 84%;
+    margin: 8px 0 8px 0;
+}
+
+.seguir{
+    border-radius: 8px;
+    background-color: var(--colorBotones);
+    color: white;
+    font-size: 86%;
+    border: none;
+    width: 77%;
+}
+
+.index-recomendadosYpublicidad{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.containerPublicidades{
+    justify-content: center;
+    display: flex;
+    width: 59%;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+    margin: 21px 0 0 0;
+    background-color: #BEBEBE;
+}
+
+.publicidad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    padding: 3%;
+    margin: 15px 0 16px 0px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.imgPublicidad{
+    width: 91%;
 }
