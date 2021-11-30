@@ -29,18 +29,24 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 60px;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.05));
 }
 
 .contacts-header{
     border-radius: 12px 12px 0 0;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid var(--colorLinea);
     display: flex;
+    padding-top: 2%;
+    margin-left: 3%;
+    width: 88%;
     justify-content: space-between;
     align-items: center;
 }
+
 .contacts-section h2{
-    margin-left: 15px;
     font-weight: bold;
+    font-size: 103%;
+    margin: 11px 0;
 }
 
 
@@ -69,9 +75,21 @@ li{
     position: relative;
     margin: 0px 0px 0px 8px;
     cursor: pointer;
+    display: flex;
+    align-items: self-end;
 }
 
+.imageContacto{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+}
 
+.status{
+    width: 8.5px;
+    height: 8.5px;
+    margin: 0px 0px 3px -9px;
+}
 
 
 .contact-state{
@@ -98,6 +116,7 @@ li{
 }
 
 .contact-info{
+    justify-content: space-between;
     display: flex;
     align-items: center;
     width: 100%;
@@ -137,6 +156,7 @@ li{
     border-radius: 12px;
     width: 100%;
     margin-top: 60px;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.05));
     display: flex;
     justify-content: center;
     height: auto;
@@ -196,6 +216,11 @@ textarea{
     cursor: pointer;
 }
 
+.post-btn:hover{
+    transition: 10ms all linear;
+    background-color: #E47F00;
+}
+
 
 
 /* ///////////////////////////////////////////////// INDEX-POSTS-SECTION ///////////////////////////////////////////////// */
@@ -204,10 +229,12 @@ textarea{
     background-color: var(--colorCards);
     border-radius: 12px;
     width: 100%;
+    margin-bottom: 15px;
     height: 100%;
     margin-top: 60px;
     display: flex;
     justify-content: center;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.05));
 }
 
 .header-post button{
@@ -224,6 +251,7 @@ textarea{
     background-color: var(--colorCards);
     border-radius: 12px;
     width: 90%;
+    margin: 13px 0 0 0;
     display: flex;
     padding: 0px 5px;
     flex-direction: column;
@@ -243,8 +271,8 @@ textarea{
 
 
 #puntosHorizontalesCard{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -324,12 +352,12 @@ textarea{
 }
 
 .textoComentario{
-    margin: 4px 0 0px 7px;
+    margin: 4px 0 0px -2px;
     font-size: 100%;
 }
 
 .nombreComentario{
-    margin: 7px 0 0 0;
+    margin: 7px 0 0px -8px;
     font-size: 90%;
     font-weight: bold;
 }
@@ -338,12 +366,14 @@ textarea{
     display: flex;
     flex-direction: row;
     margin-top: 6%;
+    margin-bottom: 2%;
     width: 100%;
 }
 
 #iconSendComentario{
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 
 #inputComentario{
@@ -368,7 +398,9 @@ textarea{
     background-color: var(--colorCards);
     border-radius: 12px;
     padding: 2%;
-    width: 55%;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.05));
+    width: 95%;
+    justify-content: center;
 }
 
 .imgYnombre{
@@ -379,7 +411,9 @@ textarea{
 }
 
 .imgPersonaRecomendada{
-    width: 55px;
+    width: 64px;
+    border-radius: 100%;
+    height: 64px;
 }
 
 .nombrePersonaRecomendada{
@@ -394,19 +428,21 @@ textarea{
     font-size: 86%;
     border: none;
     width: 77%;
+    cursor: pointer;
 }
 
 .index-recomendadosYpublicidad{
     flex-direction: column;
     display: flex;
+    width: 21%;
     align-items: center;
-    margin-top: 60px;
+    margin: 60px 20px 0px 0px;
 }
 
 .containerPublicidades{
     justify-content: center;
     display: flex;
-    width: 59%;
+    width: 100%;
     align-items: center;
     flex-direction: column;
     border-radius: 12px;
@@ -427,4 +463,13 @@ textarea{
 
 .imgPublicidad{
     width: 91%;
+    cursor: pointer;
+}
+
+#morePhotos{
+    position: fixed;
+    right: 31%;
+    color: white;
+    font-size: 165%;
+    top: 45%;
 }

@@ -29,7 +29,7 @@ nav{
 }
 
 #searcher{
-    margin-left: 15px;
+    margin-left: 11px;
     background-color: var(--colorInputs);
     border-radius: 12px;
     border: none;
@@ -54,8 +54,7 @@ nav{
     justify-content: center;
     align-items: center;
     position: relative;
-    right: 84%;
-    margin-left: 5px;
+    right: 86%;
     transition: all ease 200ms;
     background-color: inherit;
 }
@@ -80,6 +79,14 @@ nav{
 
 .right-container h3{
     cursor: pointer;
+}
+
+.icon{
+    width: 30px;
+}
+
+.iconSearch{
+    width: 25px;
 }
 
 
