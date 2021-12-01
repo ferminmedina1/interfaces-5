@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+:root{
+    --colorBotones: #E4982C;
+    --colorFondo: #E5E5E2;
+    --colorInputs: #E6E6E6;
+    --colorCards: #FFFFFF;
+    --colorNav: #FFFFFF;
+    --colorLinea: #A19595;
+}
+
 body{
     background-image: url("../images/Background.png");
     background-position: center;
@@ -9,14 +19,44 @@ body{
     font-weight: normal;
 }
 
+h1{
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+h3{
+    font-size: 21px;
+    width: 100%;
+    margin: 0;
+    color: white;
+}
+
+article{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.textoBienvenida{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+
 .container{
     display: flex;
     flex-direction: column;
     background-color: white;
     padding: 10px 40px;
+    margin: 0 67px 0px 0px;
     border-radius: 12px;
-    width: 20%;
-    margin-top: 3%;
+    width: 24%;
+    margin-top: 4%;
 }
 
 .logo-container{
@@ -45,7 +85,7 @@ form{
 
 form a{
     font-weight: bold;
-    color: #D89727;
+    color: #E47F00;
     text-decoration: none;
     align-self: flex-end;
 }
@@ -76,10 +116,10 @@ input{
     border: none;
     border-radius: 12px;
     background-color: #E6E6E6;
-    font-size:20px;
-    height:50px;
+    font-size: 18px;
+    height: 50px;
     padding-left: 10px;
-    width:auto;
+    width: 100%;
     outline: none;
     margin-top: 10px;
 }
@@ -103,7 +143,7 @@ ul{
 label{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-	font-size: 20px;
+    font-size: 18px;
     margin-top: 20px;
 }
 
@@ -119,4 +159,19 @@ li{
     flex-direction: row;
     justify-content: space-between;
     align-items:center;
+}
+
+#login{
+    color: white;
+    background-color: var(--colorBotones);
+    width: 170px;
+    height: auto;
+    border: none;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 24px;
+    padding: 10px;
+    align-self: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }

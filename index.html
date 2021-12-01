@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trabajo Practico 5 - Documentación y Testing</title>
+    <title>VeteWeb - Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/index.css">
@@ -14,7 +14,7 @@
     
     <nav>
         <div class="left-container">
-            <img src="./icons/logo.png" alt="logo" class="logo">
+            <a href="index.html"><img src="./icons/logo.png" alt="logo" class="logo"></a>
             <div class="searcher-container">
                 <input type="text" id="searcher" name="searcher" placeholder="Buscar en Veteweb">
                 <button><img class="iconSearch" src="./icons/search.png" alt="search" id="search"></button>
@@ -23,13 +23,15 @@
 
         <div class="right-container">
             <div class="nav-profile">
-                <div class="profile-img-container">
-                    <img src="./images/img-perfil-publicar.png" alt="perfil" class="crop">
+                <a href="profile.html">
+                <div class="profile-img">
+                        <img class="profile-img" src="./images/img-perfil-publicar.png" alt="perfil">
+                    </div>
+                    <h3>Hernan Medina</h3>
+                </a>
                 </div>
-                <h3>Hernan Medina</h3>
-            </div>
             <button class="home" id="actualPage"><img class="icon" src="./icons/home.png" alt="home"></button>
-            <button class="mensajes"><img class="icon" src="./icons/mensajes.png" alt="message"></button>
+            <a href="chats.html"><button class="mensajes"><img class="icon" src="./icons/mensajes.png" alt="message"></button></a>
             <button class="notificaciones"> <img class="icon" src="./icons/notificaciones.png" alt="notifications"></button>
             <a href="login.html"><button class="logout" ><img class="icon" src="./icons/signOut.png" alt="logout" id="logout"></button></a>
         </div>
@@ -214,7 +216,7 @@
                             <div class="profile-img-container">
                                 <img src="./images/img-perfil-publicar.png" alt="perfil" class="crop">
                             </div>
-                            <h3>Hernan Medina</h3>
+                            <h3 class="nombre">Hernan Medina</h3>
                         </div>
                         <textarea type="text" placeholder="Muestra que esta pasando a la comunidad..."></textarea>
                         <div class="icons">
@@ -243,7 +245,7 @@
                             </button>
                         </div>
                         <div class="contenidoPost">
-                            <p>Hola amigos, queremos contarles que ya abrimos nuestra nueva sucursal. Los esperamos con la mejor atencion!!! 🐶🐱❤</p>
+                            <p>Hola amigos, queremos contarles que ya abrimos nuestra nueva veterinaria. Los esperamos con la mejor atención!!! 🐶🐱❤</p>
                             <div class="galeria">
                                 <img class="imgGaleria" src="images/veterinaria1.jpg" alt="">
                                 <img class="imgGaleria" src="images/image_6.png" alt="">
@@ -253,9 +255,9 @@
                             </div>
                         </div>
                         <div class="likeShareComment">
-                            <button id="like"><img id="like" src="icons/like.png" alt=""></button>
-                            <button id="comment"><img id="comment" src="icons/comment.png" alt=""></button>
-                            <button id="share"><img id="share" src="icons/share.png" alt=""></button>
+                            <img id="like" src="icons/like.png" alt="">
+                            <img id="comment" src="icons/comment.png" alt="">
+                            <img id="share" src="icons/share.png" alt="">
                         </div>
                         <div class="comentarios">
                             <p class="cantCommentarios">1 comentario</p>
