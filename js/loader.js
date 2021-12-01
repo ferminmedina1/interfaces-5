@@ -14,3 +14,10 @@ function init(){
 }
 
 init();
+
+
+document.querySelector(".notifications").addEventListener("click", ()=>{
+
+    document.querySelector(".notifications").classList.toggle("click");
+     document.querySelector(".notifications-container").classList.toggle("change-display");
+});
