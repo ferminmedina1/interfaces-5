@@ -91,18 +91,18 @@ nav{
 }
 
 
-.right-container button{
+.right-container a{
     margin-right: 30px;
     border: none;
     background-color: white;
 }
 
-.right-container button img{
+.right-container a img{
     transition: all ease 200ms;
     cursor: pointer;
 }
 
-.right-container button img:hover{
+.right-container a img:hover{
     filter: drop-shadow(0px 4px 4px #AF7511);
 }
 
@@ -110,12 +110,10 @@ nav{
     display: flex;
     align-items: center;
     transition: all ease 200ms;
-    margin-right: 45px;
+    margin-right: 17px;
 }
 
-.nav-profile:hover{
-    filter: drop-shadow(0px 4px 4px #AF7511);
-}
+
 
 #logout:hover{
     filter: drop-shadow(0px 4px 4px #ff0000);
@@ -136,6 +134,7 @@ a{
     align-items: center;
     text-decoration: none;
 }
+
 
 .profile-img{
     width: 50px;
