@@ -1,0 +1,259 @@
+.contacts-section{
+    background-color: var(--colorCards);
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border-right: 1.5px solid black;
+    height: 90vh;
+}
+
+.contacts-header{
+    border-radius: 12px 12px 0 0;
+    border-bottom: 1.5px solid black;
+    display: flex;
+    padding-top: 2%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#plus{
+    position: relative;
+    top: -26px;
+    left: -5px;
+    width: 10px;
+}
+
+.newChat{
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.chats-container{
+    display: flex;
+}
+
+.contacts-section h2{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 11px 0;
+    margin-left: 10px;
+}
+
+
+ul{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li{
+    display: flex;
+    background: #E8E8E8;
+    height: auto;
+    padding: 20px;
+    width: 95%;
+    border-bottom: 1px solid #9F9090;
+    cursor: pointer;
+}
+
+.friend-image{
+    position: relative;
+    margin: 0px 0px 0px 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: self-end;
+}
+
+.imageContacto{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.status{
+    width: 12px;
+    height: 12px;
+    margin: 0px 0px 3px -15px;
+}
+
+
+.contact-state{
+    display: flex;
+    align-items: center;
+}
+
+.contact-name{
+    margin: 0;
+    display: flex;
+    font-size: 120%;
+    margin-left: -4%;
+    align-items: center;
+    font-weight: bold;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 5%;
+}
+
+.contact-info p{
+    margin: 0;
+    margin-top: 8px;
+}
+
+.contact-info button{
+    background: inherit;
+    border: none;
+    padding: 0;
+    margin: 8px;
+}
+
+.contact-info button img{
+    width: 20px;
+    height: 20px;
+}
+
+
+.searchFriend{
+    display: flex;
+    width: 50%;
+    padding: 25px 15px;
+}
+
+.searchFriend button{
+    border-radius: 12px;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -250px;
+    transition: all ease 200ms;
+    background-color: inherit;
+}
+
+#chatActual{
+    background-color: #BCB5B5;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    min-height: 90vh;
+    width: 100%;
+}
+
+.chat-header{
+    display: flex;
+    width: 100%;
+    background-color: #E5E5E2;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-profile{
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.chat-profile h3{
+    font-weight: 600;
+}
+
+.camera{
+    cursor: pointer;
+    margin-right: 4%;
+}
+
+.camera img{
+    width: 30px;
+}
+
+.chat-container{
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.message-received{
+    max-width: 420px;
+    display: flex;
+    justify-self: flex-start;
+    width: auto;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #E4982C;
+    margin: 22px 24px;
+    margin-bottom: 0;
+    padding: 15px;
+    padding-left: 0;
+    word-break: break-all;
+}
+
+.message-sent{
+    align-self: end;
+    padding: 15px;
+    padding-right: 20px;
+}
+
+.message-sent img{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
+.chat-img-container{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.chat-img-container img{
+    width: 30px;
+}
+
+.message-received p{
+    margin: 0;
+    margin-left: 10px;
+}
+
+.send-container{
+    display: flex;
+    background-color: white;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+}
+
+#send{
+    margin-left: 11px;
+    background-color: var(--colorInputs);
+    border-radius: 12px;
+    border: none;
+    padding-left: 10px;
+    font-size: 18px;
+    height: 46px;
+    width: 100%;
+}
+
+.send-container button{
+    border: none;
+    background-color: inherit;
+    position: relative;
+    left: -60px;
+}
