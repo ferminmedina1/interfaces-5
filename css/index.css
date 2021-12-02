@@ -26,7 +26,7 @@ body{
     height: 650px;
     width: 20%;
     margin-left: 20px;
-    display: flex;
+    position: sticky;
     flex-direction: column;
     margin-top: 60px;
     filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.05));
@@ -561,8 +561,9 @@ textarea{
 
 .index-recomendadosYpublicidad{
     flex-direction: column;
-    display: flex;
+    position: sticky;
     width: 21%;
+    top: 0;
     align-items: center;
     margin: 60px 20px 0px 0px;
 }
@@ -574,6 +575,7 @@ textarea{
     align-items: center;
     flex-direction: column;
     border-radius: 12px;
+    position: sticky;
     margin: 21px 0 0 0;
     background-color: #BEBEBE;
 }
