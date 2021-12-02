@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+:root{
+    --colorBotones: #E4982C;
+    --colorFondo: #E5E5E2;
+    --colorInputs: #E6E6E6;
+    --colorCards: #FFFFFF;
+    --colorNav: #FFFFFF;
+    --colorLinea: #A19595;
+}
+
+.containerBusqueda{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    display: flex;
+}
