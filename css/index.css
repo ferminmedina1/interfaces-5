@@ -69,7 +69,10 @@ li{
     padding: 2% 0px;
     margin: 0 0 10px 0px;
     width: 95%;
+    cursor: pointer;
 }
+
+
 
 .friend-image{
     position: relative;
@@ -126,8 +129,7 @@ li{
 .contact-info button{
     background: inherit;
     border: none;
-    padding: 0;
-    margin: 8px;
+    margin: 4px;
 }
 
 .contact-info button img{
@@ -135,10 +137,28 @@ li{
     height: 20px;
 }
 
+#chat, #videoCall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 5px;
+}
 
+#chat:hover{
+    background-color: #BCB5B5;
+    cursor: pointer;
+}
+
+#videoCall:hover{
+    background-color: #BCB5B5;
+    cursor: pointer;
+}
 .contact-btns{
+    display: flex;
     white-space: nowrap;
     margin-left: 2%;
+    flex-direction: row;
 }
 
 /* ///////////////////////////////////////////////// POST-SECTION ///////////////////////////////////////////////// */
@@ -193,6 +213,32 @@ textarea{
     flex-direction: column;
 }
 
+#addImage{
+    background: url(../icons/uploadImage.png) no-repeat;
+    background-repeat: round;
+    width: 25px;
+    height: 25px;
+}
+
+#addImage:hover{
+    transition: all 0.1s ease-in-out;
+    background-image: url(../icons/image_grey.png);
+}
+
+#addVideo:hover{
+    transition: all 0.1s ease-in-out;
+    background-image: url(../icons/video_grey.png);
+}
+
+#addVideo{
+    background: url(../icons/uploadVideo.png) no-repeat;
+    background-repeat: round;
+    width: 25px;
+    height: 25px;
+}
+
+
+
 .icons{
     display: flex;
     align-items: center;
@@ -228,7 +274,7 @@ textarea{
 }
 
 .post-btn:hover{
-    transition: 10ms all linear;
+    transition: all 0.1s ease-in-out;
     background-color: #E47F00;
 }
 
@@ -289,6 +335,13 @@ textarea{
 #puntosHorizontalesCard{
     width: 30px;
     height: 30px;
+    border-radius: 59px;
+    padding: 1px;
+}
+
+#puntosHorizontalesCard:hover{
+
+    background-color: var(--colorInputs);
 }
 
 
@@ -300,24 +353,72 @@ textarea{
     margin: 3px 0 0 0;
 }
 
+.cantLikes{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 14px;
+    height: 25px;
+    margin-bottom: 3%;
+    align-items: center;
+}
+
+#iconCantLikes{
+    width: 4%;
+    margin-right: 1%;
+}
+
+#textCantLikes{
+    font-size: 15px;
+}
+
 .likeShareComment{
     display: flex;
     flex-direction: row;
     border-top: 2px solid var(--colorLinea);
     padding: 8px 0px;
     border-bottom: 2px solid var(--colorLinea);
-    margin: 0 20px;
+    margin: 0 5px;
     justify-content: space-evenly;
 }
 
 #like, #comment, #share{
-    background: none;
-    width: 5%;
+    width: 26px;
+    height: 26px;
     margin: 0 57px;
     border: none;
     cursor: pointer;
 }
 
+#comment{
+    background: url(../icons/comment.png) no-repeat;
+    background-repeat: round;
+    width: 24px;
+}
+
+#comment:hover{
+    transition: all 0.2s ease-in-out;
+    background-image: url(../icons/comment_green.png);
+}
+
+#share{
+    background: url(../icons/share.png) no-repeat;
+    background-repeat: round;
+}
+
+#share:hover{
+    transition: all 0.2s ease-in-out;
+    background-image: url(../icons/share_orange.png);
+}
+
+#like{
+    background: url(../icons/like.png) no-repeat;
+    background-repeat: round;
+}
+
+#like:hover{
+    transition: all 0.2s ease-in-out;
+    background-image: url(../icons/like_rojo.png);
+}
 
 .contenidoPost{
     flex-direction: column;
@@ -327,7 +428,7 @@ textarea{
     border-radius: 12px;
     padding: 0px 21px 21px 18px;
     background-color: #E6E6E6;
-    margin: 0 0 20px 0;
+    margin: 0 0 9px 0;
 }
 
 .galeria{
@@ -390,10 +491,19 @@ textarea{
     width: 100%;
 }
 
+
+
 #iconSendComentario{
-    width: 40px;
-    height: 40px;
+    background: url(../icons/iconSendMessage.png) no-repeat;
+    background-repeat: round;
+    width: 44px;
+    height: 39px;
     cursor: pointer;
+}
+
+#iconSendComentario:hover{
+    transition: all 0.2s ease-in-out;
+    background-image: url(../icons/iconSendMessage_orange.png);
 }
 
 #inputComentario{

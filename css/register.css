@@ -188,3 +188,8 @@ li{
     margin-top: 24px;
     margin-bottom: 24px;
 }
+
+#register:hover{
+    transition: all 0.1s ease-in-out;
+    background-color: #E47F00;
+}

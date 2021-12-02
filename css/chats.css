@@ -282,6 +282,7 @@ li:hover{
 
 .send-container button{
     border: none;
+    cursor: pointer;
     position: relative;
     left: -74px;
     background: none;
