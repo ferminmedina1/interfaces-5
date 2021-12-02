@@ -32,21 +32,21 @@ h1{
 }
 
 .animation{
-    animation: rebotar 3.5s 1;
+    animation: rebotar 3.6s 1 ease-in-out;
 }
 
 @keyframes rebotar{
     0%{
-        transform: translateY(-200px);
+        transform: translateY(-400px);
     }
 
-    10%,35%,60%,80%, 100%{
+    10%,35%,60%,80%, 93%, 100%{
         transform: translateY(0px);
         /* transform: scale(1.1, 1.1); */
     }
 
     25%{
-        transform:  translateY(-100px);
+        transform:  translateY(-60px);
     }
 
     50%{
@@ -57,8 +57,11 @@ h1{
         transform:  translateY(-20px);
     }
 
-    91%{
+    87%{
         transform: translateY(-10px);
+    }
+    97%{
+        transform: translateY(-3px);
     }
     
 }
