@@ -21,3 +21,12 @@ document.querySelector(".notifications").addEventListener("click", ()=>{
     document.querySelector(".notifications").classList.toggle("click");
      document.querySelector(".notifications-container").classList.toggle("change-display");
 });
+
+
+document.getElementById('searcher').addEventListener('keydown', function(e){
+ 
+  if (e.keyCode == 13) {
+      window.location.href = "search.html"
+  }
+
+})
