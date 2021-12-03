@@ -11,7 +11,7 @@
 
 .containerBusqueda{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 nav{
@@ -22,10 +22,11 @@ nav{
 
     background-color: rgba(255, 255, 255, 0.56);
     font-size: 138%;
-    padding: 2% 1% 8.3% 0%;
-    height: 15%;
+    padding: 2% 1% 1% 0%;
     width: 22%;
-    position: sticky;
+    z-index: 2;
+    position: fixed;
+    left: 0;
 
 }
 
@@ -134,7 +135,6 @@ button:hover{
 
 .containerResultados{
     font-size: 138%;
-    margin-right: 17%;
     border-radius: 12px;
     display: flex;
     width: 42%;
