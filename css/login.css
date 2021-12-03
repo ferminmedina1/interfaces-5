@@ -10,7 +10,7 @@
 }
 
 body{
-    background-image: url("../images/Background.png");
+    background-image: url("../images/Background3.png");
     background-position: center;
     display: flex;
     justify-content: center;
@@ -32,7 +32,8 @@ h1{
 }
 
 .animation{
-    animation: rebotar 3.6s 1 ease-in-out;
+    animation: rebotar 3s 1;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes rebotar{
@@ -154,7 +155,7 @@ form p{
 }
 
 input{
-    margin-bottom: 15px;
+    margin-bottom: 4px;
     border: none;
     border-radius: 12px;
     background-color: #E6E6E6;
@@ -221,4 +222,25 @@ li{
 #login:hover{
     transition: all 0.1s ease-in-out;
     background-color: #E47F00;
+}
+
+
+#error{
+    display: none;
+    font-weight: 500;
+    color: red;
+    margin: 0px 9px;
+    font-size: 16px;
+}
+
+.labelInput{
+    margin-bottom: 25px;
+}
+
+#olvidasteContraseña{
+    margin-left: 142px;
+}
+
+#email{
+    
 }

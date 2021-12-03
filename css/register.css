@@ -2,9 +2,10 @@
 
 
 @keyframes background {
-    0%{background-image: url("../images/Background.png");}
+    0%{background-image: url("../images/Background3.png");}
     50%{background-image: url("../images/Background2.png");}
-    100%{background-image: url("../images/Background3.png");}
+    100%{background-image: url("../images/Background.png");}
+    
 }
 
 

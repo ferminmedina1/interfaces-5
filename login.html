@@ -28,16 +28,21 @@
                 <img src="./images/logo-escrito.png" alt="logo" id="logo-escrito">
             </div>
             <form id="formulario-cliente">
-                <label for="email">Email: </label>
-                <input type="text" id="email">
-                <label for="pass">Contraseña: </label>
-                <input type="password" id="pass">
-                <a href="">¿Olvidaste tu contraseña?</a>
+                <div class="labelInput">
+                    <label for="email">Email: </label>
+                    <input type="text" id="email">
+                    <label id="error">Email incorrecto</label>
+                </div>
+                <div class="labelInput">
+                    <label for="pass">Contraseña: </label>
+                    <input type="password" id="pass">
+                    <a id="olvidasteContraseña" href="">¿Olvidaste tu contraseña?</a>
+                </div>
                 <a id="login" href="index.html">Iniciar sesión</a>
                 <p>¿Sin cuenta?<a href="register.html"> Regístrate</a></p>
             </form>
         </section>
     </article>
-    <!-- <script src="./js/loader.js"></script> -->
+    <script src="js/login.js"></script>
 </body>
 </html>

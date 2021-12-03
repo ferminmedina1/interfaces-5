@@ -512,7 +512,7 @@ textarea{
 }
 
 .editPerfil:hover{
-    background-color: var(--colorLinea);
+    background-color: var(--colorInputs);
 }
 
 #pencil{
