@@ -1,3 +1,10 @@
+let ubicacionPrincipal  = window.pageYOffset;
+window.onscroll = function() {
+    let Desplazamiento_Actual = window.pageYOffset;
+    if(ubicacionPrincipal >= Desplazamiento_Actual){
+        document.querySelector('.containerFiltro').style.top = '0';
+        document.querySelector('.containerFiltro').style.top = '0';
+    }
 
-
-//La idea es que cuando se clicke en el boton persona aparezcan los divs de ubicacion y especialidad
+    ubicacionPrincipal = Desplazamiento_Actual;
+}
