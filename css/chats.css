@@ -247,6 +247,10 @@ li:hover{
     padding: 0px 15px;
 }
 
+.contacts-mobile{
+    display: none;
+}
+
 .message-sent img{
     position: relative;
     left: 10px;
@@ -302,6 +306,10 @@ li:hover{
         z-index: 0;
     }
 
+    .newChat button{
+        background: none;
+        border: none;
+    }
     .contacts-section{
         height: auto;
         width: auto;
@@ -310,6 +318,7 @@ li:hover{
 
     .contacts-header{
         height: 54px !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.5);
     }
 
     .newChat {
@@ -353,10 +362,10 @@ li:hover{
     }
 
     .user-chats{
+        display: flex;
         height: auto;
         overflow: hidden;
         overflow-x: auto;
-        display: flex;
         flex-direction: row;
         padding: 5px;
         width: 100%;
@@ -525,5 +534,13 @@ li:hover{
 
     body{
         overflow-y:auto
+    }
+
+    .user-chats{
+        display: none;
+    }
+
+    .contacts-mobile{
+        display: flex;
     }
 }
