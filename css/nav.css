@@ -201,6 +201,11 @@ a{
     cursor: pointer;
 }
 
+.notifications{
+    padding: 10px;
+    margin: 0 0 0 -9px;
+}
+
 
 .click{
     background-color: var(--colorBotones) !important;
@@ -255,6 +260,14 @@ a{
     height: 30px;
 }
 
+.deleteNotification{
+    margin-right: 18px;
+}
+
+.imgNoti{
+    width: 22px;
+    height: 22px;
+}
 
 @media only screen and (max-width: 927px) {
     .searcher-container{
@@ -300,5 +313,14 @@ a{
 
     .notifications-container{
         width: 80%;   
+    }
+
+    .deleteNotification{
+        margin-right: 18px;
+    }
+
+    .imgNoti{
+        width: 22px;
+        height: 22px;
     }
 }
